@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HM CART - Contact Us</title>
+    <link rel="icon" href="img/core-img/logo2.png">
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Custom styles for contact page -->
+    <style>
+        .contact-form-area {
+            padding: 70px 0;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            height: 50px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        .contact-form textarea {
+            height: 150px;
+        }
+        .contact-form button {
+            background-color: #fbb710;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #e0a008;
+        }
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        .contact-info h4 {
+            margin-bottom: 15px;
+        }
+        .contact-info p {
+            margin-bottom: 5px;
+        }
+        .contact-info i {
+            margin-right: 10px;
+            color: #fbb710;
+        }
+        .map-area {
+            height: 400px;
+            margin-top: 50px;
+        }
+        .map-area iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Search Wrapper Area Start -->
+    <div class="search-wrapper section-padding-100">
+        <div class="search-close">
+            <i class="fa fa-close" aria-hidden="true"></i>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="search-content">
+                        <form action="#" method="get" onsubmit="event.preventDefault(); searchProducts();">
+                            <input type="search" name="search" id="search" placeholder="Search products...">
+                            <button type="submit"><img src="img/core-img/search.png" alt=""></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Wrapper Area End -->
+
+    <!-- Main Content Wrapper Start -->
+    <div class="main-content-wrapper d-flex clearfix">
+        <!-- Mobile Nav -->
+        <div class="mobile-nav">
+            <div class="amado-navbar-brand">
+                <a href="index.html"><img src="img/core-img/" alt=""></a>
+            </div>
+            <div class="amado-navbar-toggler">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <!-- Header Area Start -->
+        <header class="header-area clearfix">
+            <div class="nav-close">
+                <i class="fa fa-close" aria-hidden="true"></i>
+            </div>
+            <div class="logo">
+                <a href="index.html"><img src="img/core-img/yash.jpg" alt=""></a>
+            </div>
+            <nav class="amado-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="product-details.html">Product</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li class="active"><a href="contact.html">Contact Us</a></li>
+                    <li id="loginLink"><a href="login.html">Login</a></li>
+                    <li id="logoutLink" style="display: none;"><a href="#" onclick="logout()">Logout</a></li>
+                </ul>
+            </nav>
+            <div class="amado-btn-group mt-30 mb-100">
+                <a href="#" class="btn amado-btn mb-15">Discount25%</a>
+                <a href="#" class="btn amado-btn active">New this week</a>
+            </div>
+            <div class="cart-fav-search mb-100">
+                <a href="cart.html" class="cart-nav"><img src="img/core-img/cart.png" alt=""> Cart <span id="cart-count">(0)</span></a>
+            </div>
+            <div class="social-info d-flex justify-content-between">
+                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+        </header>
+        <!-- Header Area End -->
+
+        <!-- Contact Area Start -->
+        <div class="cart-table-area section-padding-100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="contact-title">
+                            <h2>Get In Touch</h2>
+                            <p>We would love to hear from you! Send us a message and we'll respond as soon as possible.</p>
+                        </div>
+                        <div class="contact-form-area">
+                            <form action="#" method="post" id="contactForm">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" id="message" placeholder="Your Message" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn amado-btn">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="contact-info">
+                            <h4>Contact Information</h4>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> 123 Main Street, City, Country</p>
+                            <p><i class="fa fa-phone" aria-hidden="true"></i> +1 234 567 890</p>
+                            <p><i class="fa fa-envelope" aria-hidden="true"></i> info@hmcart.com</p>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> Monday - Friday: 9am to 5pm</p>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> Saturday: 10am to 3pm</p>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="map-area">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s123%20Main%20St%2C%20New%20York%2C%20NY%2010001%2C%20USA!5e0!3m2!1sen!2sin!4v1679903960012!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Area End -->
+
+    </div>
+    <!-- Main Content Wrapper End -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer_area clearfix">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Single Widget Area -->
+                <div class="col-12 col-lg-4">
+                    <div class="single_widget_area">
+                        <!-- Logo -->
+                        <div class="footer-logo mr-50">
+                            <a href="index.html"><img src="img/core-img/logo2.png" alt=""></a>
+                        </div>
+                        <!-- Copywrite Text -->
+                        <p class="copywrite">
+                            Copyright ©<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> & Re-distributed by <a href="https://themewagon.com/" target="_blank">Themewagon</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- Single Widget Area -->
+                <div class="col-12 col-lg-8">
+                    <div class="single_widget_area">
+                        <!-- Footer Menu -->
+                        <div class="footer_menu">
+                            <nav class="navbar navbar-expand-lg justify-content-end">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerNavContent" aria-controls="footerNavContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                                <div class="collapse navbar-collapse" id="footerNavContent">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="shop.html">Shop</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="product-details.html">Product</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="cart.html">Cart</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="checkout.html">Checkout</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="contact.html">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- jQuery and other scripts -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/active.js"></script>
+
+    <!-- Custom JavaScript for login status and cart -->
+    <script>
+        function getCookie(name) {
+            let matches = document.cookie.match(new RegExp(
+                "(?:^|; )" + name.replace(/([\.$?|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;])"
+            ));
+            return matches ? decodeURIComponent(matches[1]) : undefined;
+        }
+
+        function logout() {
+            document.cookie = "user_email=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            window.location.href = "login.html";
+        }
+
+        // Handle contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would normally send this data to a server
+            // For now, just show an alert
+            alert(Thank you for your message, ${name}! We will get back to you soon.);
+            
+            // Reset the form
+            this.reset();
+        });
+
+        // Check login status and update cart count when page loads
+        window.onload = function() {
+            const userEmail = getCookie("user_email");
+            const loginLink = document.getElementById("loginLink");
+            const logoutLink = document.getElementById("logoutLink");
+
+            if (userEmail) {
+                loginLink.style.display = "none";
+                logoutLink.style.display = "block";
+                const welcomeDiv = document.createElement("div");
+                welcomeDiv.innerHTML = Welcome, ${userEmail}!;
+                welcomeDiv.className = "welcome-message";
+                document.querySelector(".header-area").appendChild(welcomeDiv);
+            } else {
+                loginLink.style.display = "block";
+                logoutLink.style.display = "none";
+            }
+
+            // Update cart count from localStorage
+            let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            document.getElementById('cart-count').textContent = (${cartItems.length});
+        }
+    </script>
+
+    <!-- Optional CSS for welcome message -->
+    <style>
+        .welcome-message {
+            color: #fff;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+
+</body>
+</html>
